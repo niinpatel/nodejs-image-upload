@@ -24,8 +24,8 @@
         <h1 class="card-header">Upload Image</h1>
         <div class="card-body">
             <div class="form-group">
-                <form action="/upload" method="post">
-                    <input type="file" accept="image/*" class="form-control-file">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input class="form-control-file" type="file" accept="image/*" name="photo" >
                     <input class="btn mt-3" type="submit" value="upload">
                 </form>
             </div>
